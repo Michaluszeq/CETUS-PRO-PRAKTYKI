@@ -3,8 +3,8 @@
 }
 
 .App-header {
-  background-color: #002f34;
-  color: white;
+  background-color: #284B63;
+  color: #D9D9D9;
   padding: 20px;
 }
 
@@ -37,8 +37,9 @@
 
 .add-listing-btn {
   padding: 10px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #D9D9D9;
+  color: #353535;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -64,6 +65,6 @@
 footer {
   margin-top: 20px;
   padding: 10px;
-  background-color: #002f34;
-  color: white;
+  background-color: #284B63;
+  color: #D9D9D9;
 }
