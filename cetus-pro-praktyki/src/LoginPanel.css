@@ -1,0 +1,118 @@
+/* LoginPanel.css */
+
+.login-panel {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.social-login {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-login button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3b5998;
+    /* Facebook */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-login button:nth-child(2) {
+    background-color: #4285f4;
+    /* Google */
+}
+
+.social-login button:nth-child(3) {
+    background-color: #000;
+    /* Apple */
+}
+
+.social-login button:hover {
+    opacity: 0.8;
+}
+
+.options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.options p {
+    margin-bottom: 10px;
+}
+
+.options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.social-login button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3b5998;
+    /* Facebook */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.social-login img {
+    margin-right: 10px;
+    max-height: 20px;
+}
+
+.social-login button:nth-child(2) {
+    background-color: #7e97be;
+    /* Google */
+}
+
+.social-login button:nth-child(3) {
+    background-color: #d85454;
+    /* Apple */
+}
