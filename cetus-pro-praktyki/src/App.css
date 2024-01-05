@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 .App {
   text-align: center;
+}
+.appTitle{
+  font-family: 'Dosis', sans-serif;
+  font-size: 80px;
+  margin-left: 10%;
 }
 
 .App-header {
   background-color: #284B63;
   color: #D9D9D9;
-  padding: 20px;
+  padding: -90px;
 }
 
 .header-content {

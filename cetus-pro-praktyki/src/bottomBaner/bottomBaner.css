@@ -1,0 +1,7 @@
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    justify-content:space-around ;
+}

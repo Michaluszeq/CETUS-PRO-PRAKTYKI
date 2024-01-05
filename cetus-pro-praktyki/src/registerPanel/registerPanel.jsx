@@ -1,11 +1,11 @@
 // RegisterPanel.js
 
 import React, { useState } from 'react';
-import './RegisterPanel.css';
+import './registerPanel.css';
 
-import fb_Logo from './Icons/fb_Logo.png';
-import google_Logo from './Icons/google_Logo.png';
-import apple_Logo from './Icons/apple_Logo.png';
+import fb_Logo from '../Icons/fb_Logo.png';
+import google_Logo from '../Icons/google_Logo.png';
+import apple_Logo from '../Icons/apple_Logo.png';
 
 const RegisterPanel = () => {
   const [email, setEmail] = useState('');
