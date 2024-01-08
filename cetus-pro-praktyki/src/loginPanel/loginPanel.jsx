@@ -41,7 +41,7 @@ const LoginPanel = () => {
 
   return (
     <div>
-      <Baner />
+    
       <div className="login-panel">
         <h2>Zaloguj się</h2>
         <form>
@@ -90,7 +90,7 @@ const LoginPanel = () => {
           </p>
         </div>
       </div>
-      <BottomBaner />
+
     </div>
   );
 };
