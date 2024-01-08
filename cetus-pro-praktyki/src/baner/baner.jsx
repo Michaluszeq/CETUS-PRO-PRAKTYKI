@@ -7,6 +7,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import LoginPanel from "../loginPanel/loginPanel";
 import App from '../App';
+import MainBody from '../mainBody/mainBody';
 
 export default function Baner() {
   return (
@@ -40,15 +41,6 @@ export default function Baner() {
             <img src={AccountIcon} alt="Twoje Konto" />
             <p className="icon-text">Twoje Konto</p>
           </div>
-
-
-          <Routes>
-            {/* <Route path='/' element={<App/>}/> */}
-            <Route path='/dodaj-ogloszenie' />
-            <Route path='/wiadomosci' />
-            <Route path='/zaloguj' element={<App><LoginPanel /></App>} />//app
-            <Route path='/twoje-konto' />
-          </Routes>
 
         </div>
       </div>
