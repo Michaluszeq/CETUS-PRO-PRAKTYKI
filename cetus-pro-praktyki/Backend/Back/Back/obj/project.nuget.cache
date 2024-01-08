@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mm/UbkhACWY9IFiiyIeBgeoCTbqSumu7ObTI2E0tawuc0vizZst0YPk0n8JTBiAQyc1bJnpq6o6u1ZDwSeA5kA==",
+  "dgSpecHash": "XrqfxahchZsogW7t8ZHryxI2B7PTQesYdpWb/CFnwFaCl+Ba9EjcXsXISh7VhOKa2Bu8upTFeMWiAelBNmyksw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\BackendSB.csproj",
+  "projectFilePath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Robert Kubica\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.2\\microsoft.aspnetcore.openapi.7.0.2.nupkg.sha512",
     "C:\\Users\\Robert Kubica\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

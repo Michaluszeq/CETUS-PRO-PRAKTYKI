@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\BackendSB.csproj": {}
+    "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\BackendSB.csproj": {
+    "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\BackendSB.csproj",
-        "projectName": "BackendSB",
-        "projectPath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\BackendSB.csproj",
+        "projectUniqueName": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj",
+        "projectName": "Back",
+        "projectPath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\Robert Kubica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\BackendSB\\obj\\",
+        "outputPath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
