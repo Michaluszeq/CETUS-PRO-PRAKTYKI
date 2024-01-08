@@ -2,3 +2,7 @@ Link:visited{
     color: red;
 
 }
+.logo{
+    display: flex;
+    flex-direction: row;
+}
