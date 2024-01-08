@@ -3,27 +3,30 @@ import React from 'react';
 import MessageIcon from '../Icons/message-icon.png';
 import AccountIcon from '../Icons/account-icon.png';
 import loginIcon from '../Icons/loginIcon.png';
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import LoginPanel from "../loginPanel/loginPanel";
-import App from '../App';
+import './baner.css'
+
 import MainBody from '../mainBody/mainBody';
 
 export default function Baner() {
   return (
     <header className="App-header">
+
       <div className="header-content">
+        <Link to="/">
         <h1 className='appTitle'>StudyBuddy</h1>
+        </Link>
 
         <div className="header-icons">
-          <a href="#" className="add-listing-btn">Dodaj Ogłoszenie</a>
+          <Link to="/dodaj-ogloszenie"className="add-listing-btn">Dodaj Ogłoszenie</Link>
 
 
-
+          <Link to="/wiadomosci">
           <div className="icon">
             <img src={MessageIcon} alt="Wiadomości" />
             <p className="icon-text">Wiadomości</p>
           </div>
+          </Link>
 
 
 
@@ -36,11 +39,12 @@ export default function Baner() {
 
 
 
-
+          <Link to='/twoje-konto'>
           <div className="icon">
             <img src={AccountIcon} alt="Twoje Konto" />
             <p className="icon-text">Twoje Konto</p>
           </div>
+          </Link>
 
         </div>
       </div>
