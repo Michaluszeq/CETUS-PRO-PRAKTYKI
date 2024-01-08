@@ -5,6 +5,7 @@ import AccountIcon from '../Icons/account-icon.png';
 import loginIcon from '../Icons/loginIcon.png';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './baner.css'
+import StudyBuddyLogo from '../Icons/StudyBuddyLogo.png';
 
 import MainBody from '../mainBody/mainBody';
 
@@ -14,6 +15,7 @@ export default function Baner() {
 
       <div className="header-content">
         <Link to="/">
+          
         <h1 className='appTitle'>StudyBuddy</h1>
         </Link>
 
