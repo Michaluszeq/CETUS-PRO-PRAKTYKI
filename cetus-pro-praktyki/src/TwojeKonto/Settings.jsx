@@ -30,15 +30,15 @@ const Settings = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Zdjęcie Profilowe:</label>
-          <input type="text" value={profileImage} onChange={handleProfileImageChange} />
+          <input type="text" placeholder={profileImage} onChange={handleProfileImageChange} />
         </div>
         <div className="form-group">
           <label>Nazwisko:</label>
-          <input type="text" value={lastName} onChange={handleLastNameChange} />
+          <input type="text" placeholder={lastName} onChange={handleLastNameChange} />
         </div>
         <div className="form-group">
           <label>Numer Telefonu:</label>
-          <input type="text" value={phoneNumber} onChange={handlePhoneNumberChange} />
+          <input type="number" placeholder={phoneNumber} onChange={handlePhoneNumberChange} />
         </div>
         <button type="submit">Zapisz zmiany</button>
       </form>

@@ -33,7 +33,7 @@ export default function Baner() {
 
 
 
-          <Link  to="/zaloguj"><div className="icon">
+          <Link exact to="/zaloguj"><div className="icon">
             <img src={loginIcon} alt="Zaloguj" />
             <p className="icon-text">Zaloguj</p>
           </div></Link>
