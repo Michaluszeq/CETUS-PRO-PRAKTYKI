@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Settings.css';
+import './TwojeKonto.css';
 
 const Settings = () => {
   const [profileImage, setProfileImage] = useState('ścieżka_do_obrazka.png');

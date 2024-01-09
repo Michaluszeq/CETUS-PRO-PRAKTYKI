@@ -6,7 +6,7 @@ import Baner from './baner/baner';
 import BottomBaner from './bottomBaner/bottomBaner';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import LoginPanel from '../src/loginPanel/loginPanel';
-import Settings from './TwojeKonto/TwojeKonto';
+import TwojeKonto from './TwojeKonto/TwojeKonto';
 import Main from './Main'
 import LoginPage from './LoginPage'
 import YourAccount from './YourAccount'
@@ -19,12 +19,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Routes>
-            <Route path='/' element={<Main/>}/>
-            <Route path='/wiadomosci' />
-            <Route path='/zaloguj' element={<LoginPage />} />
-            <Route path='/twoje-konto' element={<YourAccount/>} />
-          </Routes>
+      <TwojeKonto/>
     </div>
   );
 }

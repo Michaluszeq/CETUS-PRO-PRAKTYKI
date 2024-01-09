@@ -7,8 +7,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './baner.css'
 import StudyBuddyLogo from '../Icons/StudyBuddyLogo.png';
 
-import MainBody from '../mainBody/mainBody';
-
 export default function Baner() {
   return (
     <header className="App-header">
