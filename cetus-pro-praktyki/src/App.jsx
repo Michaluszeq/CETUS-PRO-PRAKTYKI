@@ -13,7 +13,7 @@ import Settings from './TwojeKonto/Settings';
 export default function App() {
   const handleSearch = (searchTerm) => {
     // Tutaj możesz umieścić logikę obsługi wyszukiwania
-    console.log('Wyszukiwanie:', searchTerm);
+     console.log('Wyszukiwaniee:', searchTerm);
   };
 
   return (
