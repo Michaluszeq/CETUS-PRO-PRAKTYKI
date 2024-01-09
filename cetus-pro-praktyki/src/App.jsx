@@ -18,15 +18,14 @@ export default function App() {
 
   return (
     <div className="App">
-      <Baner />
-      <SearchBar onSearch={handleSearch} />
       <Routes>
             <Route path='/zaloguj' element={<LoginPanel />} />
-            <Route path='/' element={<h1>witaj</h1>} />
+
+
+            <Route path='/' element={<div><Baner/><SearchBar onSearch={handleSearch} /><BottomBaner/></div>} />
             {/* <Route path='/wiadomosci' /> */}
-            <Route path='/twoje-konto' element={<Settings/>} />
+            <Route path='/twoje-konto' element={<div><Baner/><Settings/><BottomBaner/></div>} />
           </Routes>
-      <BottomBaner />
     </div>
   );
 }
