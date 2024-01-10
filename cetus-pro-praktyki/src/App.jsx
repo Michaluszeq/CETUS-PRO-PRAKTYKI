@@ -6,7 +6,8 @@ import BottomBaner from './bottomBaner/bottomBaner';
 import Main from './Main';
 import LoginPage from './LoginPage';
 import YourAccount from './YourAccount';
-import RegisterPage from './RegisterPage/RegisterPage';
+import RegisterPage from './RegisterPage';
+import RegisterPanel from './registerPanel/registerPanel';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
@@ -42,7 +43,8 @@ export default function App() {
           <Route path='/wiadomosci'  />
           <Route path='/zaloguj' element={<LoginPage />} />
           <Route path='/twoje-konto' element={<YourAccount />} />
-          <Route path='/zarejestruj' element={<RegisterPage/>} />
+          <Route path='/zarejestruj' element={<RegisterPanel/>} />
+          
         </Routes>
       
     </div>

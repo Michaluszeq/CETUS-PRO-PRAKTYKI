@@ -84,10 +84,10 @@ const LoginPanel = () => {
 
         <div className="options">
           <p>
-            Nie masz konta? <Link to="/RegisterPage">Zarejestruj się</Link>
+            Nie masz konta? <Link to="/zarejestruj">Zarejestruj się</Link>
           </p>
           <p>
-            <a href="#forgot-password">Nie pamiętam hasła</a>
+             <Link to="/resethasla"> Nie pamiętam hasła </Link>
           </p>
           <Link to="/">
           Powrót

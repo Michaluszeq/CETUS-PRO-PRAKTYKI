@@ -1,3 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e4dfdf; /* Kolor tła strony */
+}
+
 .register-panel {
     max-width: 400px;
     margin: 0 auto;
@@ -63,12 +72,12 @@ button:hover {
 }
 
 .social-register button:nth-child(2) {
-    background-color: #4285f4;
+    background-color: #7e97be;
     /* Google */
 }
 
 .social-register button:nth-child(3) {
-    background-color: #000;
+    background-color: #d85454;
     /* Apple */
 }
 
