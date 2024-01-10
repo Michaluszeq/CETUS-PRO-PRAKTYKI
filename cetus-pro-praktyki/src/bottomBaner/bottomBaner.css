@@ -1,7 +1,17 @@
-.rowContainer{
+/* bottomBaner.css */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.rowContainer {
     display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    align-items: center;
-    justify-content:space-around ;
+    justify-content: space-around;
+}
+
+.rowContainer p {
+    margin: 0;
 }
