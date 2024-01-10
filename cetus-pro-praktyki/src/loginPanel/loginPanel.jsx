@@ -87,7 +87,7 @@ const LoginPanel = () => {
             Nie masz konta? <Link to="/zarejestruj">Zarejestruj się</Link>
           </p>
           <p>
-             <Link to="/resethasla"> Nie pamiętam hasła </Link>
+             <Link to="/resethasl"> Nie pamiętam hasła </Link>
           </p>
           <Link to="/">
           Powrót
