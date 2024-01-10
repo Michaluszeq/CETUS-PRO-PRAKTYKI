@@ -6,6 +6,7 @@ import './registerPanel.css';
 import fb_Logo from '../Icons/fb_Logo.png';
 import google_Logo from '../Icons/google_Logo.png';
 import apple_Logo from '../Icons/apple_Logo.png';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const RegisterPanel = () => {
   const [email, setEmail] = useState('');
@@ -89,6 +90,9 @@ const RegisterPanel = () => {
             <img src={apple_Logo} alt="Apple Icon" />
             Zarejestruj przez Apple
           </button>
+          <Link to="/">
+          Powrót
+          </Link>
         </div>
       </form>
     </div>

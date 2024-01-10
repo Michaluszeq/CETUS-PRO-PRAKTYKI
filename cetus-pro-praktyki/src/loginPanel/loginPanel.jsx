@@ -6,6 +6,7 @@ import google_Logo from '../Icons/google_Logo.png';
 import apple_Logo from '../Icons/apple_Logo.png';
 import Baner from '../baner/baner';
 import BottomBaner from '../bottomBaner/bottomBaner';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const LoginPanel = () => {
   const [email, setEmail] = useState('');
@@ -83,11 +84,14 @@ const LoginPanel = () => {
 
         <div className="options">
           <p>
-            Nie masz konta? <a href="#register">Zarejestruj się</a>
+            Nie masz konta? <Link to="/RegisterPage">Zarejestruj się</Link>
           </p>
           <p>
             <a href="#forgot-password">Nie pamiętam hasła</a>
           </p>
+          <Link to="/">
+          Powrót
+          </Link>
         </div>
       </div>
 

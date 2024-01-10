@@ -7,6 +7,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15%;
 }
 
 h2 {
@@ -22,13 +23,16 @@ label {
     margin-bottom: 5px;
 }
 
-input {
-    padding: 8px;
+input,
+button {
+    padding: 10px;
+    /* Ustawienie jednolitego rozmiaru dla inputów i buttonów */
     margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Dodane, aby zachować jednolitą szerokość inputów */
 }
 
 button {
-    padding: 10px;
     background-color: #4caf50;
     color: #fff;
     border: none;
