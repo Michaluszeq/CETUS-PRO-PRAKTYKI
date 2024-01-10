@@ -8,7 +8,10 @@ import './baner.css'
 import StudyBuddyLogo from '../Icons/StudyBuddyLogo.png';
 
 export default function Baner() {
+  
   return (
+
+
     <header className="App-header">
 
       <div className="header-content">

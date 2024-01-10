@@ -8,11 +8,6 @@ import LoginPanel from '../src/loginPanel/loginPanel';
 import Settings from './TwojeKonto/TwojeKonto';
 
 export default function App() {
-  const handleSearch = (searchTerm) => {
-    // Tutaj możesz umieścić logikę obsługi wyszukiwania
-     console.log('Wyszukiwaniee:', searchTerm);
-  };
-
   return (
     <div>
         <LoginPanel />

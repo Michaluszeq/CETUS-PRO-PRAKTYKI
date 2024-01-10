@@ -6,3 +6,7 @@ Link:visited{
     display: flex;
     flex-direction: row;
 }
+.App-header{
+    box-sizing: border-box;
+    width: 100%;
+}

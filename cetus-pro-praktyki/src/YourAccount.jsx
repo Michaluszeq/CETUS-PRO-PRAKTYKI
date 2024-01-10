@@ -12,11 +12,6 @@ import LoginPage from './LoginPage'
 import YourAccount from './YourAccount'
 
 export default function App() {
-  const handleSearch = (searchTerm) => {
-    // Tutaj możesz umieścić logikę obsługi wyszukiwania
-     console.log('Wyszukiwaniee:', searchTerm);
-  };
-
   return (
     <div className="App">
       <TwojeKonto/>
