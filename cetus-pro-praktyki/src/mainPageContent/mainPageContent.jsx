@@ -8,8 +8,6 @@ export default function App() {
 
   return (
     <div className="mpc">
-     <h1>SG</h1>
-     <MainPageTile/>
      <MainPageTile/>
      <MainPageTile/>
     </div>
