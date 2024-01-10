@@ -8,6 +8,7 @@ import LoginPage from './LoginPage';
 import YourAccount from './YourAccount';
 import RegisterPage from './RegisterPage';
 import RegisterPanel from './registerPanel/registerPanel';
+import AddPage from './AddPage/AddPage';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
@@ -40,6 +41,7 @@ export default function App() {
     
         <Routes>
           <Route path='/' element={<Main />} />
+          <Route path='/dodaj-ogloszenie' element={<AddPage/>}/>
           <Route path='/wiadomosci'  />
           <Route path='/zaloguj' element={<LoginPage />} />
           <Route path='/twoje-konto' element={<YourAccount />} />
