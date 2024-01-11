@@ -4,12 +4,9 @@
     background: linear-gradient(to right, #0D2C3F, #284B63);
     color: #D9D9D9;
     padding: 30px 0;
-    /* Zwiększ padding na górze i na dole */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    /* Dodaj position relative */
     z-index: 1;
-    /* Ustaw z-index, aby baner był na wierzchu */
 }
 
 .header-content {
@@ -22,31 +19,41 @@
 .appTitle {
     font-family: 'Dosis', sans-serif;
     font-size: 42px;
-    /* Zwiększ rozmiar fontu */
     margin: 0;
     text-decoration: none;
 }
-h1:visited{
+
+h1:visited {
     color: white;
 }
-.appTitle:visited{
+
+.appTitle:visited {
     color: white;
 }
-.SBContainer{
+
+.SBContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: 20px;
 }
-.MainLink{
+
+.MainLink {
+    text-decoration: none;
     font-size: 50px;
     color: white;
-    text-decoration: none;
+    
 }
-.SBLogo{
+
+.MainLink:hover {
+    border-bottom: none;
+}
+
+.SBLogo {
     height: 80px;
 }
-.appTitle:hover{
+
+.appTitle:hover {
     color: white;
     text-decoration: none;
 }
@@ -54,6 +61,11 @@ h1:visited{
 .header-icons {
     display: flex;
     align-items: center;
+}
+
+/* Usuń podkreślenie z linków "Zaloguj", "Wiadomości" i "Twoje konto" */
+.header-icons a {
+    text-decoration: none;
 }
 
 .icon {
@@ -67,7 +79,6 @@ h1:visited{
 
 .icon img {
     width: 40px;
-    /* Zwiększ rozmiar ikon */
     height: 40px;
     padding-top: 40px;
     margin-bottom: 5px;
@@ -77,14 +88,11 @@ h1:visited{
 .icon-text {
     margin-top: 5px;
     font-size: 14px;
-    /* Zwiększ rozmiar tekstu pod ikoną */
     font-weight: 500;
 }
 
 .add-listing-btn {
     padding: 12px;
-    
-    /* Zwiększ padding przycisku */
     background-color: #D9D9D9;
     color: #353535;
     font-weight: 500;
@@ -92,11 +100,9 @@ h1:visited{
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
-    /* Zwiększ rozmiar fontu przycisku */
     margin-left: auto;
     margin-right: 20px;
     border-radius: 10px;
-    /* Zwiększ zaokrąglenie narożników przycisku */
     transition: background-color 0.3s;
 }
 
@@ -105,12 +111,10 @@ h1:visited{
     color: white;
 }
 
-/* Dodaj styl, aby ukryć pasek do przesuwania */
 body {
     overflow: hidden;
 }
 
-/* Styl dla paska przewijania dla niektórych przeglądarek */
 body::-webkit-scrollbar {
     display: none;
 }
