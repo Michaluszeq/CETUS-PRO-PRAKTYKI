@@ -3,6 +3,7 @@
 .search-container {
     display: flex;
     align-items: center;
+    margin:  4px 20px;
 }
 
 .search-input {
@@ -16,7 +17,7 @@
 }
 
 .search-button {
-    padding: 10px;
+    padding: 7.5px;
     font-size: 16px;
     cursor: pointer;
     background-color: #007bff;

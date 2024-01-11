@@ -24,6 +24,17 @@
     font-size: 42px;
     /* Zwiększ rozmiar fontu */
     margin: 0;
+    text-decoration: none;
+}
+h1:visited{
+    color: white;
+}
+.appTitle:visited{
+    color: white;
+}
+.appTitle:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .header-icons {
@@ -76,7 +87,8 @@
 }
 
 .add-listing-btn:hover {
-    background-color: #45a049;
+    background-color: #353535;
+    color: white;
 }
 
 /* Dodaj styl, aby ukryć pasek do przesuwania */
