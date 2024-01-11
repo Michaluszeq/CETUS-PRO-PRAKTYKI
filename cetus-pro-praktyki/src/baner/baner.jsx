@@ -15,7 +15,7 @@ export default function Baner() {
     <header className="App-header">
 
       <div className="header-content">
-        <Link to="/">
+        <Link className="SBContainer" to="/">
         <div className='SBContainer'>
         <img className="SBLogo" src={StudyBuddyLogo}></img>
         <h1 className='MainLink'>Studdy Buddy</h1>

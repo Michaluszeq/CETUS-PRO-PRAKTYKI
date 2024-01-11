@@ -10,8 +10,9 @@ export default function App() {
   
   return (
     <div className="mpc">
-     <MainPageTile photoloc='l' photo={Gielda} title="Giełda książek" />
-     <MainPageTile photo={OpinieLogo} title="Opinie o nauczycielach"/>
+      <Link className="tile" to='/gielda'><MainPageTile photo={Gielda} title="Giełda książek" /></Link>
+     
+     <MainPageTile className="tile" photo={OpinieLogo} title="Opinie o nauczycielach"/>
     </div>
   );
 }

@@ -1,12 +1,10 @@
  import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import Baner from './baner/baner';
-import BottomBaner from './bottomBaner/bottomBaner';
+import BookStore from '../src/bookStore';
 import Main from './Main';
 import LoginPage from './LoginPage';
 import YourAccount from './YourAccount';
-import RegisterPage from './RegisterPage';
 import RegisterPanel from './registerPanel/registerPanel';
 import AddPage from './AddPage/AddPage';
 
@@ -46,6 +44,7 @@ export default function App() {
           <Route path='/zaloguj' element={<LoginPage />} />
           <Route path='/twoje-konto' element={<YourAccount />} />
           <Route path='/zarejestruj' element={<RegisterPanel/>} />
+          <Route path='/gielda' element={<BookStore/>}/>
           
         </Routes>
       

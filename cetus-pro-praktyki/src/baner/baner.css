@@ -36,6 +36,7 @@ h1:visited {
     flex-direction: row;
     align-items: center;
     column-gap: 20px;
+    text-decoration: none;
 }
 
 .MainLink {
@@ -112,7 +113,7 @@ h1:visited {
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar {
