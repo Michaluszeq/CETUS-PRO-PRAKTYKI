@@ -32,6 +32,20 @@ h1:visited{
 .appTitle:visited{
     color: white;
 }
+.SBContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+.MainLink{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+.SBLogo{
+    height: 80px;
+}
 .appTitle:hover{
     color: white;
     text-decoration: none;
