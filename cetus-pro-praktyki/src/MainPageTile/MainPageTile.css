@@ -1,6 +1,8 @@
 .MainPageTileContainer{
-    border: solid black 3px;
+    /* border: solid black 3px; */
+    border-radius: 15px;
     width: 90%;
     margin: 30px 5% ;
     height: 250px;
+    background-color: whitesmoke;
 }
