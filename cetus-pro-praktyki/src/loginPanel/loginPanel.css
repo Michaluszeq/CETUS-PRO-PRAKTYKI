@@ -8,7 +8,10 @@ body {
 
 .login-panel {
     width: 25%;
-    margin: 10px auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: whitesmoke;
     padding: 20px;
     border: 1px solid #ccc;
@@ -32,10 +35,8 @@ label {
 input,
 button {
     padding: 10px;
-    /* Ustawienie jednolitego rozmiaru dla inputów i buttonów */
     margin-bottom: 10px;
     box-sizing: border-box;
-    /* Dodane, aby zachować jednolitą szerokość inputów */
 }
 
 button {
@@ -59,22 +60,24 @@ button:hover {
 .social-login button {
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #3b5998;
-    /* Facebook */
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.social-login img {
+    margin-right: 10px;
+    max-height: 20px;
 }
 
 .social-login button:nth-child(2) {
-    background-color: #4285f4;
-    /* Google */
+    background-color: #7e97be; /* Google */
 }
 
 .social-login button:nth-child(3) {
-    background-color: #000;
-    /* Apple */
+    background-color: #d85454; /* Apple */
 }
 
 .social-login button:hover {
@@ -97,32 +100,4 @@ button:hover {
 
 .options a:hover {
     text-decoration: underline;
-}
-
-.social-login button {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #3b5998;
-    /* Facebook */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.social-login img {
-    margin-right: 10px;
-    max-height: 20px;
-}
-
-.social-login button:nth-child(2) {
-    background-color: #7e97be;
-    /* Google */
-}
-
-.social-login button:nth-child(3) {
-    background-color: #d85454;
-    /* Apple */
 }
