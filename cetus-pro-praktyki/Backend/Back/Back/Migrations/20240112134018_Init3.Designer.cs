@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Back.Migrations
 {
     [DbContext(typeof(ProjektDbContext))]
-    [Migration("20240108131928_Init")]
-    partial class Init
+    [Migration("20240112134018_Init3")]
+    partial class Init3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -103,7 +103,7 @@ namespace Back.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Teacher")
+                    b.Property<string>("Teachers")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

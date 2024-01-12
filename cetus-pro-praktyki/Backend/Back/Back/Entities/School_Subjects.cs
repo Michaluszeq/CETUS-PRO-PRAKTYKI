@@ -6,6 +6,6 @@
         public string Subject { get; set; }
         public string Teacher { get; set; }
         
-        public virtual  List<Review> Reviews { get; set; }
+       
     }
 }
