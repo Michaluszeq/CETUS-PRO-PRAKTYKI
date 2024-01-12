@@ -5,7 +5,7 @@ import './Advert.css'; // Importowanie pliku ze stylami
 import fb_Logo from '../Icons/fb_Logo.png';
 import google_Logo from '../Icons/google_Logo.png';
 import apple_Logo from '../Icons/apple_Logo.png';
-import Rating from '../rating/Rating';
+import Rating from '../Rating';
 
 const Advert = () => {
   const [images, setImages] = useState([fb_Logo, google_Logo, apple_Logo]);
