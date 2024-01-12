@@ -9,7 +9,7 @@ import Settings from './TwojeKonto/TwojeKonto';
 
 export default function App() {
   return (
-    <div>
+    <div className=''>
         <LoginPanel />
     </div>
     

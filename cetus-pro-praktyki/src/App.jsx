@@ -1,4 +1,4 @@
- import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import BookStore from '../src/bookStore';
@@ -14,40 +14,45 @@ export default function App() {
     console.log('Wyszukiwanie:', searchTerm);
   };
 
-  const [szerokosc, setSzerokosc] = useState(window.innerWidth);
+  const [rozmiarOkna, setRozmiarOkna] = useState({
+    szerokosc: window.innerWidth,
+    wysokosc: window.innerHeight,
+  });
 
   useEffect(() => {
-    const aktualizujSzerokosc = () => {
-      setSzerokosc(window.innerWidth);
+    const aktualizujRozmiarOkna = () => {
+      setRozmiarOkna({
+        szerokosc: window.innerWidth,
+        wysokosc: window.innerHeight,
+      });
     };
 
-    window.addEventListener('resize', aktualizujSzerokosc);
+    window.addEventListener('resize', aktualizujRozmiarOkna);
 
     // Czyszczenie nasłuchiwacza zdarzeń przy odmontowywaniu komponentu
     return () => {
-      window.removeEventListener('resize', aktualizujSzerokosc);
+      window.removeEventListener('resize', aktualizujRozmiarOkna);
     };
   }, []); // Pusta tablica zależności oznacza, że efekt zostanie uruchomiony tylko raz, po zamontowaniu komponentu
 
-  const szerokoscStylu = {
-    width: `${szerokosc}px`,
+  const rozmiarOknaStyl = {
+    width: `${rozmiarOkna.szerokosc}px`,
+    height: `${rozmiarOkna.wysokosc}px`,
   };
 
   return (
-    <div style={szerokoscStylu} className="App">
+    <div style={rozmiarOknaStyl} className="App">
       
-    
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/dodaj-ogloszenie' element={<AddPage/>}/>
-          <Route path='/wiadomosci'  />
+          <Route path='/dodaj-ogloszenie' element={<AddPage />} />
+          <Route path='/wiadomosci' />
           <Route path='/zaloguj' element={<LoginPage />} />
           <Route path='/twoje-konto' element={<YourAccount />} />
-          <Route path='/zarejestruj' element={<RegisterPanel/>} />
-          <Route path='/gielda' element={<BookStore/>}/>
-          
+          <Route path='/zarejestruj' element={<RegisterPanel />} />
+          <Route path='/gielda' element={<BookStore />} />
         </Routes>
-      
+     
     </div>
   );
 }

@@ -44,6 +44,16 @@
 .mainCotainer{
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
+}
+.mainCotainerLoginPage{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  width: 40%;
 }
 
 .add-listing-btn {
