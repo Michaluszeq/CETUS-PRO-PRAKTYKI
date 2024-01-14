@@ -1,6 +1,6 @@
 ﻿namespace Back.Entities
 {
-    public class Review
+    public class Reviews
     {
         public int Id { get; set; }
         public string Author { get; set; }
