@@ -72,7 +72,8 @@ namespace Back.Controllers
             }
             var pom2 = pom.ToArray();
             var id= pom2[0].Id;
-            return Ok(_DbContext.Reviews.Where(r => r.Id == id));
+       
+            return Ok(_DbContext.Reviews.Where(r => r.School_SubjectsId == id));
         }
         [HttpGet("books")]
         public ActionResult<School_Subjects> Get2()
