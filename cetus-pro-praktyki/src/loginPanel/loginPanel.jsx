@@ -68,15 +68,15 @@ const LoginPanel = () => {
 
           <div className="social-login">
             <button type="button" onClick={handleFacebookLogin}>
-              <img src={fb_Logo} alt="Facebook Icon" />
+              <img className='icon' src={fb_Logo} alt="Facebook Icon" />
               Zaloguj przez Facebook
             </button>
             <button type="button" onClick={handleGoogleLogin}>
-              <img src={google_Logo} alt="Google Icon" />
+              <img className='icon' src={google_Logo} alt="Google Icon" />
               Zaloguj przez Google
             </button>
             <button type="button" onClick={handleAppleLogin}>
-              <img src={apple_Logo} alt="Apple Icon" />
+              <img className='icon' src={apple_Logo} alt="Apple Icon" />
               Zaloguj przez Apple
             </button>
           </div>

@@ -78,15 +78,15 @@ const RegisterPanel = () => {
 
         <div className="social-register">
           <button type="button" onClick={handleFacebookRegister}>
-            <img src={fb_Logo} alt="Facebook Icon" />
+            <img className='icon' src={fb_Logo} alt="Facebook Icon" />
             Zarejestruj przez Facebook
           </button>
           <button type="button" onClick={handleGoogleRegister}>
-            <img src={google_Logo} alt="Google Icon" />
+            <img className='icon' src={google_Logo} alt="Google Icon" />
             Zarejestruj przez Google
           </button>
           <button type="button" onClick={handleAppleRegister}>
-            <img src={apple_Logo} alt="Apple Icon" />
+            <img className='icon' src={apple_Logo} alt="Apple Icon" />
             Zarejestruj przez Apple
           </button>
           <p>Masz już konto?

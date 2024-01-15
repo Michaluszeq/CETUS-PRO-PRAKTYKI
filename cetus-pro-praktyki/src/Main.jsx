@@ -15,7 +15,6 @@ export default function App() {
   return (
             <div className='mainCotainer'>
                 <Baner/>
-                <SearchBar onSearch={handleSearch} />
                 <MainPageContent/>
                 <BottomBaner/>
             </div>
