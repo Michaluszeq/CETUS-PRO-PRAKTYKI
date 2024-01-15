@@ -51,7 +51,8 @@ h1:visited {
 }
 
 .SBLogo {
-    height: 80px;
+    height: auto;
+    width: 30%;
 }
 
 .appTitle:hover {

@@ -13,6 +13,7 @@
 }
 .TilePhoto{
     height: 70%;
+    width: auto;
 }
 h2{
     font-size: 50px;
