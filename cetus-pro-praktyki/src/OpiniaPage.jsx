@@ -1,7 +1,7 @@
-// OpiniaPage.jsx
-
 import React from 'react';
 import Opinia from '../src/Opinia/Opinia';
+import Baner from './baner/baner';
+import BottomBaner from './bottomBaner/bottomBaner';
 
 const OpiniaPage = () => {
   const opinie = [
@@ -15,10 +15,15 @@ const OpiniaPage = () => {
 
   return (
     <div>
-      <h1>Opinie nauczycieli</h1>
-      {opinie.map((opinia, index) => (
+      <Baner></Baner>
+      <div className='OpinionContainer'>
+        <h1>Opinie o nauczycielach</h1>
+        {opinie.map((opinia, index) => (
         <Opinia key={index} {...opinia} />
-      ))}
+        ))}
+      </div>
+      
+      <BottomBaner/>
     </div>
   );
 };

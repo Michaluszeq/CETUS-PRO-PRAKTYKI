@@ -6,6 +6,7 @@ import MainPageTile from '../MainPageTile/MainPageTile';
 import Gielda from '../Icons/ksiazka.jpg';
 import OpinieLogo from '../Icons/stasiek.png';
 
+
 export default function App() {
   
   return (

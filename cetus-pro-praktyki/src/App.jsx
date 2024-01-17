@@ -53,7 +53,7 @@ export default function App() {
           <Route path='/zarejestruj' element={<RegisterPanel />} />
           <Route path='/gielda' element={<BookStore />} />
 
-          <Route path='/opinie' element={<BookStore />} />
+          <Route path='/opinie' element={<OpiniaPage />} />
           <Route path='/korepetycje' element={<BookStore />} />
         </Routes>
      

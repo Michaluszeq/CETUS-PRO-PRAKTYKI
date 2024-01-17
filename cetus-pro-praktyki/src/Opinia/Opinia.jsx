@@ -9,18 +9,18 @@ const Opinia = ({ nazwaNauczyciela, przedmiot, ocena, komentarz, data }) => {
     <div className="opinia-container">
       <div className="opinia-header">
         <div className="opinia-info">
-          <h2>{nazwaNauczyciela}</h2>
-          <p>{data}</p>
+          <h2>Stanisław Królikowski</h2>
+          <p>09092137</p>
         </div>
         <div className="ocena">
-          <p>Ocena: {ocena}/5</p>
+          <p>Ocena: 5/5</p>
         </div>
       </div>
       <div className="opinia-info">
-        <p>Przedmiot: {przedmiot}</p>
+        <p><b>Przedmiot:</b> szbd</p>
       </div>
       <div className="opinia-tresc">
-        <p>{komentarz}</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi asperiores delectus cumque? Harum sit magnam consequuntur cupiditate animi facilis mollitia fugiat, voluptas quia excepturi sint atque eius hic est accusamus?</p>
       </div>
     </div>
   );
