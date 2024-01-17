@@ -40,7 +40,6 @@ const Advert = (props) => {
             <div className="rating">
               
               <Rating stars={parseInt(props.ocena)} /> {/* Zaktualizowano na 5 gwiazdek */}
-              <span className="seller-rating"><strong>Ocena Sprzedającego:</strong> 4.5/5</span>
             </div>
           </div>
         </div>
