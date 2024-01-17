@@ -1,0 +1,40 @@
+/* Opinia.css */
+
+.opinia-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+}
+
+.opinia-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.opinia-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.opinia-info p {
+    margin: 0;
+}
+
+.ocena {
+    font-weight: bold;
+}
+
+.opinia-tresc p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.opinia-tresc p:last-child {
+    margin-bottom: 0;
+}
