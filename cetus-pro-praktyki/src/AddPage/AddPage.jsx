@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { Link, useNavigate } from 'react-router-dom';
 import './AddPage.css';
 
 export default function AddPage() {
@@ -7,6 +8,7 @@ export default function AddPage() {
   const [content, setContent] = useState('');
   const [price, setPrice] = useState('');
   const [contact, setContact] = useState('');
+  const navigate = useNavigate();
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -31,7 +33,7 @@ export default function AddPage() {
     var tytul = title;
 
     var raw = JSON.stringify({
-      mark: "2",
+      mark: '2',
       title: tytul,
       description: content,
       author: 'cycek',
@@ -49,8 +51,26 @@ export default function AddPage() {
 
     fetch('http://localhost:5213/studybuddy/gallery', requestOptions)
       .then((response) => response.text())
-      .then((result) => console.log(result))
-      .catch((error) => console.log('error', error));
+      .then((result) => {
+        Swal.fire({
+          title: 'Success!',
+          text: 'Ogłoszenie dodane pomyślnie!',
+          icon: 'success',
+          timer: 2000, // 2 seconds
+          showConfirmButton: false,
+        }).then(() => {
+          // Redirect to another site after 2 seconds
+          navigate('/gielda');
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: 'Error!',
+          text: 'Wystąpił błąd podczas dodawania ogłoszenia.',
+          icon: 'error',
+        });
+        console.log('error', error);
+      });
   };
 
   return (
