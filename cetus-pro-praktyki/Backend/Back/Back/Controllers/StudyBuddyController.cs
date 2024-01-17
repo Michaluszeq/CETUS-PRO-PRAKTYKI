@@ -62,7 +62,7 @@ namespace Back.Controllers
 
      
 
-        [HttpGet("opinions")]
+        [HttpGet("opinionskox")]
         public ActionResult<Reviews> Get([FromQuery] string subject)
         {
             var pom = _DbContext.School_Subjects.Where(r => r.Subject == subject);
@@ -75,6 +75,13 @@ namespace Back.Controllers
        
             return Ok(_DbContext.Reviews.Where(r => r.School_SubjectsId == id));
         }
+
+        [HttpGet("opinion")]
+        public ActionResult<Reviews> Get3()
+        {
+            return Ok(_DbContext.Reviews);
+        }
+
         [HttpGet("books")]
         public ActionResult<Books> Get2()
         {

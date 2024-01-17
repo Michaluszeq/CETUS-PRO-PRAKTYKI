@@ -1,14 +1,41 @@
-import React from 'react'; 
+import React, { useState, useEffect } from 'react';
 import './adverts.css';
-import Advert from '../advert/Advert'
+import Advert from '../advert/Advert';
 
+function App() {
+  const [myArray, setMyArray] = useState([]);
 
+  useEffect(() => {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
 
-export default function App() {
+    fetch("http://localhost:5213/studybuddy/books", requestOptions)
+      .then(response => response.json())
+      .then(result => {
+        console.log(result[1]['title']);
+        setMyArray(result);
+      })
+      .catch(error => console.log('error', error));
+  }, []);
+
   return (
-            <div className='advertsContent'>
-                <Advert tytul="Tytuł" opis="dsfsadgasdg" nrtel="555 777 999" cena="100" sprzedawca="dd" ocena="1"></Advert>
-            </div>
-           
+    <div className='advertsContent'>
+      {myArray.map(item => (
+        <Advert
+          tytul={item.title}
+          opis={item.description}
+          nrtel={item.contact}
+          cena={item.price}
+          sprzedawca={item.author}
+          ocena={item.mark}
+          img={item.pictureURL}
+        />
+      ))}
+    </div>
   );
 }
+
+export default App;
+
