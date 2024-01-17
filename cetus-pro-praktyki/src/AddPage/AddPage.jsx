@@ -31,9 +31,10 @@ export default function AddPage() {
     myHeaders.append('Content-Type', 'application/json');
 
     var tytul = title;
+    var ocena = document.getElementById('ocena').value;
 
     var raw = JSON.stringify({
-      mark: '2',
+      mark: ocena,
       title: tytul,
       description: content,
       author: 'cycek',
@@ -89,7 +90,12 @@ export default function AddPage() {
 
         <div className="form-group">
           <label>Cena:</label>
-          <input type="number" value={price} onChange={handlePriceChange}></input>
+          <input type="number" onChange={handlePriceChange}></input>
+        </div>
+
+        <div className="form-group">
+          <label>Ocena produktu:</label>
+          <input type="number" min={1} max={5} id='ocena'  onChange={handlePriceChange}></input>
         </div>
 
         <div className="form-group">
