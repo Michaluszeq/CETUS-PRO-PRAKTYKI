@@ -76,12 +76,12 @@ namespace Back.Controllers
             return Ok(_DbContext.Reviews.Where(r => r.School_SubjectsId == id));
         }
         [HttpGet("books")]
-        public ActionResult<School_Subjects> Get2()
+        public ActionResult<Books> Get2()
         {
             return Ok(_DbContext.Books);
         }
         [HttpGet("book")]
-        public ActionResult<School_Subjects> Get2([FromQuery] int id)
+        public ActionResult<Books> Get2([FromQuery] int id)
         {
             return Ok(_DbContext.Books.Where(r=>r.Id==id));
         }

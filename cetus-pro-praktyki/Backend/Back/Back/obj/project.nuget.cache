@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gY8iFRAPLGVhxfu8LEn/nwzDDzl242S+R2GpEFqDbL7e0KuW/7TmptJG1GH6jZYi7A+jUgCgXcsV3z8lESETqA==",
+  "dgSpecHash": "smeJsSyMq/SFtUrVS/IgkiAsC9uBUOhDzW9l60wU1bVLh0vR9dtL0MqmhhGGImgdRHf4G7VpjHud1A5psJE0IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robert Kubica\\source\\repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj",
+  "projectFilePath": "C:\\Users\\Robert Kubica\\Source\\Repos\\Michaluszeq\\StudyBuddy\\cetus-pro-praktyki\\Backend\\Back\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Robert Kubica\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Robert Kubica\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
