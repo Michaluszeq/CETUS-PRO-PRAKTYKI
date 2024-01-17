@@ -12,7 +12,7 @@ export default function App() {
     <div className="mpc">
       <Link className="tile" to='/gielda' ><MainPageTile photo={Gielda} title="Giełda książek" /></Link>
      
-     <MainPageTile className="tile" photo={OpinieLogo} title="Opinie o nauczycielach"/>
+     <Link className="tile" to='/Opinia' ><MainPageTile  photo={OpinieLogo} title="Opinie o nauczycielach"/></Link>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import LoginPage from './LoginPage';
 import YourAccount from './YourAccount';
 import RegisterPanel from './registerPanel/registerPanel';
 import AddPage from './AddPage/AddPage';
+import OpiniaPage from './OpiniaPage';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
@@ -51,6 +52,7 @@ export default function App() {
           <Route path='/twoje-konto' element={<YourAccount />} />
           <Route path='/zarejestruj' element={<RegisterPanel />} />
           <Route path='/gielda' element={<BookStore />} />
+          <Route path='/Opinia'element={<OpiniaPage />} />
         </Routes>
      
     </div>
