@@ -7,7 +7,7 @@ import google_Logo from '../Icons/google_Logo.png';
 import apple_Logo from '../Icons/apple_Logo.png';
 import Rating from '../rating/Rating';
 
-const Advert = () => {
+const Advert = (props) => {
   const [images, setImages] = useState([fb_Logo, google_Logo, apple_Logo]);
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -28,16 +28,18 @@ const Advert = () => {
       </div>
       <div className="details-container">
         <div className="left-details">
-          <h2>Nazwa Produktu</h2>
-          <p>Opis produktu Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><strong>Cena: 100 zł</strong></p>
+          <h2>{props.tytul}</h2>
+          <p>{props.opis}</p>
+          <p><strong>Cena: {props.cena} zł</strong></p>
         </div>
         <div className="right-details">
           <div className="rating-container">
-            <p><strong>Dane Sprzedawcy:</strong> Jan Kowalski</p>
-            <p><strong>Numer Telefonu:</strong> 123-456-789</p>
+            <p><strong>Dane Sprzedawcy:</strong> {props.sprzedawca}</p>
+            <p><strong>Numer Telefonu:</strong> {props.nrtel}</p>
+            <b>Ocena produktu:</b>
             <div className="rating">
-              <Rating stars={5} /> {/* Zaktualizowano na 5 gwiazdek */}
+              
+              <Rating stars={parseInt(props.ocena)} /> {/* Zaktualizowano na 5 gwiazdek */}
               <span className="seller-rating"><strong>Ocena Sprzedającego:</strong> 4.5/5</span>
             </div>
           </div>

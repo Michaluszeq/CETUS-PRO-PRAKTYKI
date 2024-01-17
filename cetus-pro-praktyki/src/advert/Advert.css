@@ -1,6 +1,7 @@
 /* Advert.css */
 
 .advert-container {
+    background-color: whitesmoke;
     display: flex;
     margin: 20px;
     border: 1px solid #ddd;

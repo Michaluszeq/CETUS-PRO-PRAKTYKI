@@ -7,7 +7,7 @@ import Advert from '../advert/Advert'
 export default function App() {
   return (
             <div className='advertsContent'>
-                <Advert></Advert>
+                <Advert tytul="Tytuł" opis="dsfsadgasdg" nrtel="555 777 999" cena="100" sprzedawca="dd" ocena="1"></Advert>
             </div>
            
   );
