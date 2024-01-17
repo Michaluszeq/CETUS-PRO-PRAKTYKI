@@ -51,6 +51,8 @@ export default function App() {
           <Route path='/twoje-konto' element={<YourAccount />} />
           <Route path='/zarejestruj' element={<RegisterPanel />} />
           <Route path='/gielda' element={<BookStore />} />
+          <Route path='/opinie' element={<BookStore />} />
+          <Route path='/korepetycje' element={<BookStore />} />
         </Routes>
      
     </div>
