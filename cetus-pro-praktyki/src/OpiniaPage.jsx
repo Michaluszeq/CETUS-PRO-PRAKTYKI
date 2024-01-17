@@ -12,7 +12,7 @@ const OpiniaPage = () => {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:5213/studybuddy/opinions?subject=Bazy danych", requestOptions)
+    fetch("http://localhost:5213/studybuddy/opinion", requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -28,9 +28,9 @@ const OpiniaPage = () => {
         <h1>Opinie o nauczycielach</h1>
         {opinions.map(opinion => (
           <Opinia
-            nauczyciel={opinion.author}
-            data={opinion.date}
-            ocena={opinion.rating}
+            nauczyciel={opinion.teacher}
+            data={opinion.data}
+            ocena={opinion.mark}
             przedmiot={opinion.subject}
             tresc={opinion.description}
           />

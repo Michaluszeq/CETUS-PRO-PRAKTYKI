@@ -36,13 +36,21 @@ export default function AddPage() {
 
         <div className="form-group">
           <label>Treść ogłoszenia:</label>
-          <textarea value={content} onChange={handleContentChange}></textarea>
+          <textarea onChange={handleContentChange}></textarea>
+        </div>
+        <div className="form-group">
+          <label>Cena:</label>
+          <input type='number' value={content} onChange={handleContentChange}></input>
+        </div>
+        <div className="form-group">
+          <label>Nr telefonu:</label>
+          <input type="number"  />
         </div>
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Zdjęcia:</label>
           <input type="file" accept="image/*" multiple onChange={handleImageChange} />
-        </div>
+        </div> */}
 
         <button type="button" onClick={handleAddAnnouncement}>
           Dodaj Ogłoszenie
