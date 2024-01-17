@@ -1,29 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Opinia from '../src/Opinia/Opinia';
 import Baner from './baner/baner';
 import BottomBaner from './bottomBaner/bottomBaner';
 
 const OpiniaPage = () => {
-  const opinie = [
-    {
-      imie: 'Jan Kowalski',
-      ocena: 4,
-      komentarz: 'Bardzo dobry nauczyciel, zawsze pomocny i cierpliwy.',
-    },
-    // Dodaj więcej opinii według potrzeb
-  ];
+  const [opinions, setOpinions] = useState([]);
+
+  useEffect(() => {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+
+    fetch("http://localhost:5213/studybuddy/opinions?subject=Bazy danych", requestOptions)
+      .then(response => response.json())
+      .then(result => {
+        console.log(result);
+        setOpinions(result);
+      })
+      .catch(error => console.log('error', error));
+  }, []);
 
   return (
     <div>
-      <Baner></Baner>
+      <Baner />
       <div className='OpinionContainer'>
         <h1>Opinie o nauczycielach</h1>
-        {opinie.map((opinia, index) => (
-        <Opinia key={index} {...opinia} />
+        {opinions.map(opinion => (
+          <Opinia
+            nauczyciel={opinion.author}
+            data={opinion.date}
+            ocena={opinion.rating}
+            przedmiot={opinion.subject}
+            tresc={opinion.description}
+          />
         ))}
       </div>
-      
-      <BottomBaner/>
+      <BottomBaner />
     </div>
   );
 };
