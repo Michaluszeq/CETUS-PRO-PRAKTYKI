@@ -95,7 +95,7 @@ export default function AddPage() {
 
         <div className="form-group">
           <label>Ocena produktu:</label>
-          <input type="number" min={1} max={5} id='ocena'  onChange={handlePriceChange}></input>
+          <input type="number" min={1} max={5} id='ocena' ></input>
         </div>
 
         <div className="form-group">
