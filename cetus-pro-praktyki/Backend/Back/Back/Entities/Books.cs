@@ -9,7 +9,7 @@
         public string Author { get; set; }
         public string Price { get; set; }
         public string Contact { get; set; }
-
+        public string Mark { get; set; }
         public string PictureUrl { get; set; }
 
     }
