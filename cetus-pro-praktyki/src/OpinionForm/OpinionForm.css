@@ -1,0 +1,18 @@
+.FormContainer{
+    background-color: whitesmoke;
+    width: 97%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+input,textarea{
+    width: 70%;
+}
+button{
+    width: 70%;
+    margin: 40px;
+}

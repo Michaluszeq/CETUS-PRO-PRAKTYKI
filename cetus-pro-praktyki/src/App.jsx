@@ -8,6 +8,7 @@ import YourAccount from './YourAccount';
 import RegisterPanel from './registerPanel/registerPanel';
 import AddPage from './AddPage/AddPage';
 import OpiniaPage from './OpiniaPage';
+import AddOpinionPage from './AddOpinionPage';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
@@ -45,6 +46,7 @@ export default function App() {
     <div style={rozmiarOknaStyl} className="App">
       
         <Routes>
+          <Route path='/dodaj-opinie' element={<AddOpinionPage/>}/>
           <Route path='/' element={<Main />} />
           <Route path='/dodaj-ogloszenie' element={<AddPage />} />
           <Route path='/wiadomosci' />
