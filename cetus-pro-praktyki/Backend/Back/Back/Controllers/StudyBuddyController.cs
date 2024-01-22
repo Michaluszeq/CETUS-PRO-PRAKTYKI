@@ -45,6 +45,17 @@ namespace Back.Controllers
             return Ok("Dodano przedmiot");
         }
 
+        [HttpPost("corepetition")]
+        public ActionResult corepetition([FromBody] Corepetition corepetition)
+        {
+
+            _DbContext.Corepetitions.Add(corepetition);
+            _DbContext.SaveChanges();
+
+
+            return Ok("Dodano przedmiot");
+        }
+
         [HttpPost("gallery")]
         public ActionResult gallery([FromBody] Books book)
         {
@@ -91,6 +102,11 @@ namespace Back.Controllers
         public ActionResult<Books> Get2([FromQuery] int id)
         {
             return Ok(_DbContext.Books.Where(r=>r.Id==id));
+        }
+        [HttpGet("corepetitions")]
+        public ActionResult<Corepetition> Get4()
+        {
+            return Ok(_DbContext.Corepetitions);
         }
 
     }

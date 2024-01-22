@@ -7,6 +7,7 @@ namespace Back.Entities
         public DbSet<Books> Books { get; set; }
         public DbSet<School_Subjects> School_Subjects { get;set; }
         public DbSet<Reviews> Reviews { get; set; }
+        public DbSet<Corepetition> Corepetitions { get; set; }
 
 
 
