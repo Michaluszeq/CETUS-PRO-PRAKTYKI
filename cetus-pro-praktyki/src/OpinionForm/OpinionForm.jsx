@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate,Link } from 'react-router-dom'; // Import useNavigate
 import Swal from 'sweetalert2'; // Import SweetAlert
 
 import '../OpinionForm/OpinionForm.css';
@@ -54,6 +54,7 @@ export default function App() {
 
   return (
     <div className="FormContainer">
+      <h2>Dodaj opinię</h2>
       <h3>Przedmiot:</h3>
       <input id="przedmiot" type="text" />
       <h3>Nauczyciel:</h3>
@@ -64,6 +65,7 @@ export default function App() {
       <input defaultValue="1" id="ocena" type="number" min={1} max={5} />
 
       <button onClick={addOpinion}>Dodaj Opinię</button>
+      <Link className='Link' to="/">Powrót do strony głównej</Link>
     </div>
   );
 }
