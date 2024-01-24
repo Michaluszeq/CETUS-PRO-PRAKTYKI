@@ -5,7 +5,7 @@ import fb_Logo from '../Icons/fb_Logo.png';
 import google_Logo from '../Icons/google_Logo.png';
 import apple_Logo from '../Icons/apple_Logo.png';
 
-// Reszta kodu...
+
 
 const RegisterPanel = () => {
   const [email, setEmail] = useState('');

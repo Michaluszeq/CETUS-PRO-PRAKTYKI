@@ -9,10 +9,10 @@ import RegisterPanel from './registerPanel/registerPanel';
 import AddPage from './AddPage/AddPage';
 import OpiniaPage from './OpiniaPage';
 import AddOpinionPage from './AddOpinionPage';
+import KorepetycjePage from './KorepetycjePage';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
-    // Tutaj możesz umieścić logikę obsługi wyszukiwania
     console.log('Wyszukiwanie:', searchTerm);
   };
 
@@ -54,9 +54,8 @@ export default function App() {
           <Route path='/twoje-konto' element={<YourAccount />} />
           <Route path='/zarejestruj' element={<RegisterPanel />} />
           <Route path='/gielda' element={<BookStore />} />
-
           <Route path='/opinie' element={<OpiniaPage />} />
-          <Route path='/korepetycje' element={<BookStore />} />
+          <Route path='/korepetycje' element={<KorepetycjePage />} />
         </Routes>
      
     </div>
