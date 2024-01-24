@@ -29,7 +29,7 @@ export default function AddPage() {
   const AddToBD = () => {
     var myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
-
+    var zdjecie = document.getElementById('zdjecie').value;
     var tytul = title;
     var ocena = document.getElementById('ocena').value;
 
@@ -37,10 +37,10 @@ export default function AddPage() {
       mark: ocena,
       title: tytul,
       description: content,
-      author: 'cycek',
+      author: 'autor',
       price: price,
       contact: contact,
-      pictureUrl: 'dawd',
+      pictureUrl: zdjecie,
     });
 
     var requestOptions = {
@@ -78,6 +78,11 @@ export default function AddPage() {
     <div className="add-page-container">
       <h2>Dodaj Ogłoszenie</h2>
       <form>
+      <div className="form-group">
+          <label>Zdjęcie do ogłoszenia(link):</label>
+          <input id='zdjecie' type="text"   />
+        </div>
+
         <div className="form-group">
           <label>Tytuł:</label>
           <input type="text" value={title} onChange={handleTitleChange} />
@@ -97,6 +102,8 @@ export default function AddPage() {
           <label>Ocena produktu:</label>
           <input type="number" min={1} max={5} id='ocena' ></input>
         </div>
+
+        
 
         <div className="form-group">
           <label>Nr telefonu:</label>
