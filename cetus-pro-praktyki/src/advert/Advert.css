@@ -12,6 +12,8 @@
 
 .image-container {
     left: 10px;
+    top: 10px;
+    bottom: 10px;
     position: relative;
     overflow: hidden;
     flex: 1;

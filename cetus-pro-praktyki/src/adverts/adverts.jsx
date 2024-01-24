@@ -30,7 +30,7 @@ function App() {
           cena={item.price}
           sprzedawca={item.author}
           ocena={item.mark}
-          img={item.pictureURL}
+          zdjecie={item.pictureUrl}
         />
       ))}
     </div>

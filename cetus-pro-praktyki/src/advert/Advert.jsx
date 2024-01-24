@@ -22,9 +22,10 @@ const Advert = (props) => {
   return (
     <div className="advert-container">
       <div className="image-container">
-        <button className="prev-button" onClick={handlePrevImage}>&lt;</button>
+        {/* <button className="prev-button" onClick={handlePrevImage}>&lt;</button>
         <img src={images[currentImage]} alt={`Product ${currentImage + 1}`} />
-        <button className="next-button" onClick={handleNextImage}>&gt;</button>
+        <button className="next-button" onClick={handleNextImage}>&gt;</button> */}
+        <img src={props.zdjecie} alt={props.zdjecie} srcset="" />
       </div>
       <div className="details-container">
         <div className="left-details">
