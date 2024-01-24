@@ -40,14 +40,6 @@ export default function KorepetycjePage() {
             />
           ))}
         </div>
-        <Korepetycje
-          temat="Korepetycje z matematyki"
-          opis="ascdascdadadasdasdadasdasdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd"
-          cena="50 zł"
-          autor="Adam Mickiewicz"
-          klasa="7"
-          kontakt="503123123"
-        />
       </div>
       <BottomBaner />
     </div>

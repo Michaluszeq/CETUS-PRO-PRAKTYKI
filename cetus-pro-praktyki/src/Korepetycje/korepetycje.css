@@ -12,6 +12,7 @@
     /* Centruj panel i dodaj odstęp na dole */
     text-align: center;
     /* Wyśrodkuj tekst */
+    background-color: whitesmoke;
 }
 
 .korepetycja-header {
