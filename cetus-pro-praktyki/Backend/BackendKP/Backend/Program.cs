@@ -1,21 +1,29 @@
+using Microsoft.EntityFrameworkCore;
+using Backend;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDistributedMemoryCache();
+string connectionString = builder.Configuration.GetConnectionString("default");
+builder.Services.AddDbContext<AppDBContext>(c => c.UseSqlServer(connectionString));
 
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
+
+
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    options.Cookie.Name = "test";
-    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.IdleTimeout = TimeSpan.FromSeconds(15);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
 
 var app = builder.Build();
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -25,7 +33,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.UseSession();
 
