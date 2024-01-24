@@ -27,6 +27,7 @@ export default function Baner() {
         <div className="header-icons">
           <Link to="/dodaj-ogloszenie"className="add-listing-btn">Dodaj Ogłoszenie</Link>
           <Link to="/dodaj-opinie"className="add-listing-btn">Dodaj Opinię</Link>
+          <Link to="/dodaj-korepetycje"className="add-listing-btn">Dodaj ofertę korepetycji</Link>
 
 
           <Link to="/wiadomosci">

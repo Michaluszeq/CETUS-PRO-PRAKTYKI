@@ -10,6 +10,7 @@ import AddPage from './AddPage/AddPage';
 import OpiniaPage from './OpiniaPage';
 import AddOpinionPage from './AddOpinionPage';
 import KorepetycjePage from './KorepetycjePage';
+import AddCorepetitionPage from './addCorepetitionPage';
 
 export default function App() {
   const handleSearch = (searchTerm) => {
@@ -47,6 +48,8 @@ export default function App() {
       
         <Routes>
           <Route path='/dodaj-opinie' element={<AddOpinionPage/>}/>
+          <Route path='/dodaj-korepetycje' element={<AddCorepetitionPage/>}/>
+
           <Route path='/' element={<Main />} />
           <Route path='/dodaj-ogloszenie' element={<AddPage />} />
           <Route path='/wiadomosci' />

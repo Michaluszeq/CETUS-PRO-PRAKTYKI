@@ -19,6 +19,7 @@ export default function App() {
      </Link>
      
      
+     
      <Link  to="/korepetycje" className='tile'>
      <MainPageTile className="tile" photo={OpinieLogo} title="Korepetycje"/>
      </Link>
