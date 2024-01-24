@@ -1,25 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './korepetycje.css';
 
 function Korepetycje(props) {
-  
-
-  
-
   return (
-    <div className="korepetycje-container">
-     
-      <div className="korepetycje-list">
+    <div className="korepetycja-card">
+      <div className="korepetycja-header">
+        <h2 className="korepetycja-title">{props.temat}</h2>
+        <p className="korepetycja-price"><strong>Cena:</strong> {props.cena} zł</p>
+      </div>
+      <div className="korepetycja-content">
+        <p className="korepetycja-description">{props.opis}</p>
+      </div>
+      <div className="korepetycja-footer">
+        <p><strong>Autor:</strong> {props.autor}</p>
+        <p><strong>Klasa:</strong> {props.klasa}</p>
         
-          <div key={props.id} className="korepetycja-card">
-            <h2>{props.temat}</h2>
-            <p>{props.opis}</p>
-            <p>Cena: {props.cena} zł</p>
-            Kontakt:{props.kontakt}
-            autor:{props.autor}
-            klasa:{props.klasa}
-          </div>
-      
+      </div>
+      <div className='korepetycje-kontakt'>
+        <p><strong>Kontakt:</strong> {props.kontakt}</p>
       </div>
     </div>
   );

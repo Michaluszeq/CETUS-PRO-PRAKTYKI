@@ -1,18 +1,56 @@
-.korepetycje-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.korepetycje-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
+/* Dodaj stylizację według własnych preferencji */
 
 .korepetycja-card {
+    position: relative;
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    /* Dostosuj szerokość kafelka według preferencji */
+    margin: 0 auto 20px;
+    /* Centruj panel i dodaj odstęp na dole */
+    text-align: center;
+    /* Wyśrodkuj tekst */
 }
 
+.korepetycja-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.korepetycja-title {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 40%;
+}
+
+.korepetycja-price {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.korepetycja-content {
+    margin: 15px 0;
+}
+
+.korepetycja-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -6%;
+}
+
+.korepetycja-footer strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.korepetycje-kontakt {
+    margin-left: 10%;
+}
