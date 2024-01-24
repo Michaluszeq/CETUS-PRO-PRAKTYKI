@@ -9,13 +9,13 @@ const OpiniaPage = () => {
 
   return (
     <div>
-      <Baner />
+      {/* <Baner /> */}
       <div className='OpinionFormContainer'>
         <OpionionForm/>
         
         
       </div>
-      <BottomBaner />
+      {/* <BottomBaner /> */}
     </div>
   );
 };

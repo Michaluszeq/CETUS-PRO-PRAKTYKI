@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './TwojeKonto.css';
+import {Link} from 'react-router-dom';
 
 const Settings = () => {
   const [profileImage, setProfileImage] = useState('ścieżka_do_obrazka.png');
@@ -68,6 +69,7 @@ const Settings = () => {
           <input type="date" value={birthdate} onChange={handleBirthdateChange} />
         </div>
         <button type="submit">Zapisz zmiany</button>
+        <Link to="/">Powrót</Link>
       </form>
     </div>
   );

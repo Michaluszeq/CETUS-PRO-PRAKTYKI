@@ -1,6 +1,6 @@
 .FormContainer{
     background-color: whitesmoke;
-    width: 97%;
+    width: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -15,4 +15,7 @@ input,textarea{
 button{
     width: 70%;
     margin: 40px;
+}
+.Link{
+    padding-bottom: 50px;
 }

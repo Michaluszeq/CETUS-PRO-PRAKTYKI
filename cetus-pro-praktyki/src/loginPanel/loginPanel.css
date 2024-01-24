@@ -68,7 +68,9 @@ button:hover {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .social-login button {
@@ -79,6 +81,7 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 .social-login button:nth-child(2) {
