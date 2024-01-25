@@ -8,8 +8,9 @@ export default function App(props) {
 
   return (
     <div className="MainPageTileContainer">
+      <img className='TilePhoto' src={props.photo}></img>
             <h2>{props.title}</h2>
-            <img className='TilePhoto' src={props.photo}></img>
+            
     </div>
     
   );
