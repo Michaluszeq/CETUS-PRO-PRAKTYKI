@@ -107,7 +107,7 @@ export default function AddPage() {
 
         <div className="form-group">
           <label>Nr telefonu:</label>
-          <input type="number" value={contact} onChange={handleContactChange} />
+          <input type="number" min={111111111} max={999999999} value={contact} onChange={handleContactChange} />
         </div>
 
         <button type="button" onClick={AddToBD}>
