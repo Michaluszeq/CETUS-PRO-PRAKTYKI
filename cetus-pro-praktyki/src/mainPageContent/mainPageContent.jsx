@@ -5,7 +5,6 @@ import "../mainPageContent/mainPageContent.css"
 import MainPageTile from '../MainPageTile/MainPageTile';
 import Gielda from '../Icons/ksiazka.jpg';
 import OpinieLogo from '../Icons/stasiek.png';
-import Korepetycje from '../Icons/korepetycje.png';
 
 
 export default function App() {
@@ -22,7 +21,7 @@ export default function App() {
      
      
      <Link  to="/korepetycje" className='tile'>
-     <MainPageTile className="tile" photo={Korepetycje} title="Korepetycje"/>
+     <MainPageTile className="tile" photo={OpinieLogo} title="Korepetycje"/>
      </Link>
     
 
