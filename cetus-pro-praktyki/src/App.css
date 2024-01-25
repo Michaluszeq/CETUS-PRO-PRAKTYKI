@@ -58,6 +58,13 @@
   width: 100%;
   padding: 30px 0px;
 }
+.OpinionContainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 550px;
+}
 
 .mainCotainerLoginPage{
   box-sizing: border-box;

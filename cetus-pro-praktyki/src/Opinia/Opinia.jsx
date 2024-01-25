@@ -9,7 +9,7 @@ const Opinia = (props) => {
     <div className="opinia-container">
       <div className="opinia-header">
         <div className="opinia-info">
-          <h2>{props.nauczyciel}</h2>
+          <h2>Nauczyciel: {props.nauczyciel}</h2>
           <p>{props.data}</p>
         </div>
         <div className="ocena">
