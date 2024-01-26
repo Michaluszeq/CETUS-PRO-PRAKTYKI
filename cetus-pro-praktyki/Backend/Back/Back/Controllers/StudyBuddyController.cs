@@ -76,15 +76,9 @@ namespace Back.Controllers
         [HttpGet("opinionskox")]
         public ActionResult<Reviews> Get([FromQuery] string subject)
         {
-            var pom = _DbContext.School_Subjects.Where(r => r.Subject == subject);
-            if (pom.Count() == 0)
-            {
-                return Ok("Blad");
-            }
-            var pom2 = pom.ToArray();
-            var id= pom2[0].Id;
+           
        
-            return Ok(_DbContext.Reviews.Where(r => r.School_SubjectsId == id));
+            return Ok(_DbContext.Reviews.Where(r => r.Subject==subject));
         }
 
         [HttpGet("opinion")]
