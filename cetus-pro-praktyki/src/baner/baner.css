@@ -70,7 +70,7 @@ h1:visited {
 }
 
 .header-icons {
-    margin-left: 70% ;
+    margin-left: 10% ;/*tu pierdolnij potem coś innnego*/
     display: flex;
     align-items: center;
 }
@@ -121,10 +121,6 @@ h1:visited {
 .add-listing-btn:hover {
     background-color: #353535;
     color: white;
-}
-
-body {
-    /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar {
