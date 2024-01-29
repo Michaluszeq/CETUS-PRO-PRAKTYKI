@@ -9,10 +9,13 @@ const OpiniaPage = () => {
   const [opinions, setOpinions] = useState(""); // Initialize opinions state
 
   const option = {
-    width: '70%',
+    width: '35%',
     height:'35px',
     radius:'30px'
   };
+  const btn={
+    width:'35%'
+  }
 
   // Function to handle generating opinions
   const generateOpinions = () => {
@@ -38,7 +41,7 @@ const OpiniaPage = () => {
           <option value="Religia">Religia</option>
           <option value="Programowanie">Programowanie</option>
         </select>
-        <button onClick={generateOpinions}>Wybierz</button>
+        <button style={btn} onClick={generateOpinions}>Wybierz</button>
         
         <h1>Opinie o nauczycielach</h1>
         <Generator what={opinions} />
