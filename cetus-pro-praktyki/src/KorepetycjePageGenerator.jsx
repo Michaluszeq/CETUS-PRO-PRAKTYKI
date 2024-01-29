@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 import Baner from './baner/baner';
 import BottomBaner from './bottomBaner/bottomBaner';
 import Korepetycje from './Korepetycje/korepetycje';
-import './KorepetycjePage.css'; // Importuj plik ze stylami
+import './KorepetycjePage.css';
 
 export default function KorepetycjePage(props) {
     const [opinions, setOpinions] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
   
     useEffect(() => {
@@ -17,7 +17,7 @@ export default function KorepetycjePage(props) {
             redirect: 'follow'
           };
   
-          const url = `http://localhost:5213/studybuddy/opinionskox?subject=${props.what}`;
+          const url = `http://localhost:5213/StudyBuddy/corepetitionkox?subject=${props.what}`;
           const response = await fetch(url, requestOptions);
           if (!response.ok) {
             throw new Error('Failed to fetch opinions');
@@ -26,6 +26,8 @@ export default function KorepetycjePage(props) {
           setOpinions(data);
         } catch (error) {
           setError(error.message);
+        } finally {
+          setLoading(false);
         }
       };
   
@@ -35,10 +37,16 @@ export default function KorepetycjePage(props) {
 
   return (
     <div className='korepetycje-page'>
+     
+      {loading ? (
+        <p>Loading...</p>
+      ) : error ? (
+        <p>Error: {error}</p>
+      ) : (
         <div className='korepetycje-list'>
           {opinions.map(item => (
             <Korepetycje
-              key={item.id} // Dodaj unikalny klucz dla każdej korepetycji
+              key={item.id}
               temat={item.subject}
               opis={item.description}
               cena={item.price}
@@ -48,8 +56,8 @@ export default function KorepetycjePage(props) {
             />
           ))}
         </div>
-     
-     
+      )}
+    
     </div>
   );
 }

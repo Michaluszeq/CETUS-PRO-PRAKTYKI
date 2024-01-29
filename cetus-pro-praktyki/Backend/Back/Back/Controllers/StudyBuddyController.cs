@@ -56,7 +56,15 @@ namespace Back.Controllers
             return Ok("Dodano przedmiot");
         }
 
-        [HttpPost("gallery")]
+        [HttpGet("corepetitionkox")]
+        public ActionResult<Reviews> Getc([FromQuery] string subject)
+        {
+
+
+            return Ok(_DbContext.Corepetitions.Where(r => r.Subject == subject));
+        }
+
+        [HttpPost("galleryd")]
         public ActionResult gallery([FromBody] Books book)
         {
             _DbContext.Books.Add(book);
