@@ -64,7 +64,7 @@ namespace Back.Controllers
             return Ok(_DbContext.Corepetitions.Where(r => r.Subject == subject));
         }
 
-        [HttpPost("galleryd")]
+        [HttpPost("gallery")]
         public ActionResult gallery([FromBody] Books book)
         {
             _DbContext.Books.Add(book);
