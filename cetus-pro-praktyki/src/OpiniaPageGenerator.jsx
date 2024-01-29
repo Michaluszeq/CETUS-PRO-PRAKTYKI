@@ -35,7 +35,7 @@ const OpiniaPage = (props) => {
 
   return (
     <div className='generatedContainer'>
-      
+
       {opinions.map(opinion => (
         <Opinia
           key={opinion.id} // Add a unique key prop

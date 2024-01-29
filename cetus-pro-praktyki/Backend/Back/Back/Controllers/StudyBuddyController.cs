@@ -88,13 +88,6 @@ namespace Back.Controllers
        
             return Ok(_DbContext.Reviews.Where(r => r.Subject==subject));
         }
-        [HttpGet("corepetitionkox")]
-        public ActionResult<Reviews> Getc([FromQuery] string subject)
-        {
-
-
-            return Ok(_DbContext.Corepetitions.Where(r => r.Subject == subject));
-        }
 
         [HttpGet("opinion")]
         public ActionResult<Reviews> Get3()
