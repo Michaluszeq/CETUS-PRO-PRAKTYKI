@@ -4,41 +4,45 @@ import Baner from './baner/baner';
 import BottomBaner from './bottomBaner/bottomBaner';
 import Korepetycje from './Korepetycje/korepetycje';
 import './KorepetycjePage.css'; // Importuj plik ze stylami
+import Generator from './KorepetycjePageGenerator';
 
 export default function KorepetycjePage() {
-  const [myArray, setMyArray] = useState([]);
+  const [opinions, setOpinions] = useState(""); // Initialize opinions state
 
-  useEffect(() => {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-    
-    fetch("http://localhost:5213/studybuddy/corepetitions", requestOptions)
-    .then(response => response.json())
-    .then(result => {
-      setMyArray(result);
-    })
-    .catch(error => console.log('error', error));
-  }, []);
+  const option = {
+    width: '70%',
+    height:'35px',
+    radius:'30px'
+  };
+
+  // Function to handle generating opinions
+  const getCorepetitions = () => {
+    const selectedOpinion = document.getElementById("przedmiot").value;
+    setOpinions(selectedOpinion); // Update opinions state
+  }
 
   return (
     <div className='korepetycje-page'>
       <Baner />
+        <select style={option} name="" id="przedmiot">
+                        <option value="J.Polski">J.Polski</option>
+                        <option value="J.Niemiecki">J.Niemiecki</option>
+                        <option value="J.Angielski">J.Angielski</option>
+                        <option value="wf">WF</option>
+                        <option value="Biologia">Biologia</option>
+                        <option value="Chemia">Chemia</option>
+                        <option value="Fizyka">Fizyka</option>
+                        <option value="Geografia">Geografia</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Matematyka">Matematyka</option>
+                        <option value="Religia">Religia</option>
+                        <option value="Programowanie">Programowanie</option>
+                    </select>
+                    <button onClick={getCorepetitions}>Wybierz</button>
       <div className='korepetycje-container'>
         <h1>Lista Korepetycji</h1>
         <div className='korepetycje-list'>
-          {myArray.map(item => (
-            <Korepetycje
-              key={item.id} // Dodaj unikalny klucz dla każdej korepetycji
-              temat={item.subject}
-              opis={item.description}
-              cena={item.price}
-              autor={item.author}
-              klasa={item.class}
-              kontakt={item.contact}
-            />
-          ))}
+          <Generator what={opinions}/>
         </div>
       </div>
       <BottomBaner />

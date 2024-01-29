@@ -37,7 +37,7 @@ export default function KorepetycjePage(props) {
 
   return (
     <div className='korepetycje-page'>
-     
+    
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
@@ -57,7 +57,7 @@ export default function KorepetycjePage(props) {
           ))}
         </div>
       )}
-    
+      
     </div>
   );
 }
