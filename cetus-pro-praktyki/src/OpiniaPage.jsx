@@ -1,47 +1,47 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Opinia from '../src/Opinia/Opinia';
 import Baner from './baner/baner';
 import BottomBaner from './bottomBaner/bottomBaner';
-
-import './App.css';
+import Generator from './OpiniaPageGenerator.jsx';
 import './OpiniaPageShortForm.jsx';
 
 const OpiniaPage = () => {
-  const [opinions, setOpinions] = useState([]);
+  const [opinions, setOpinions] = useState(""); // Initialize opinions state
 
-  useEffect(() => {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
+  const option = {
+    width: '70%',
+    height:'35px',
+    radius:'30px'
+  };
 
-    fetch("http://localhost:5213/studybuddy/opinion", requestOptions)
-      .then(response => response.json())
-      .then(result => {
-        console.log(result);
-        setOpinions(result);
-      })
-      .catch(error => console.log('error', error));
-  }, []);
-
-
+  // Function to handle generating opinions
+  const generateOpinions = () => {
+    const selectedOpinion = document.getElementById("przedmiot").value;
+    setOpinions(selectedOpinion); // Update opinions state
+  }
 
   return (
     <div>
       <Baner />
       <div className='OpinionContainer'>
-        
+        <select style={option} name="" id="przedmiot">
+          <option value="J.Polski">J.Polski</option>
+          <option value="J.Niemiecki">J.Niemiecki</option>
+          <option value="J.Angielski">J.Angielski</option>
+          <option value="WF">WF</option>
+          <option value="Biologia">Biologia</option>
+          <option value="Chemia">Chemia</option>
+          <option value="Fizyka">Fizyka</option>
+          <option value="Geografia">Geografia</option>
+          <option value="Historia">Historia</option>
+          <option value="Matematyka">Matematyka</option>
+          <option value="Religia">Religia</option>
+          <option value="Programowanie">Programowanie</option>
+        </select>
+        <button onClick={generateOpinions}>Wybierz</button>
         
         <h1>Opinie o nauczycielach</h1>
-        {opinions.map(opinion => (
-          <Opinia
-            nauczyciel={opinion.teacher}
-            data={opinion.data}
-            ocena={opinion.mark}
-            przedmiot={opinion.subject}
-            tresc={opinion.description}
-          />
-        ))}
+        <Generator what={opinions} />
       </div>
       <BottomBaner />
     </div>
