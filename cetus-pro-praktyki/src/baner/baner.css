@@ -8,10 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     text-align: center;
     margin-bottom: 40px;
-
 }
 
 .SBContainer {
@@ -38,7 +36,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-right: -90%;
-   
+    /* You might need to adjust this value based on your layout */
 }
 
 .add-listing-btn {
@@ -90,4 +88,21 @@
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .SBLogo {
+        width: 100%;
+        /* Make the logo take full width on smaller screens */
+        max-width: none;
+        /* Reset max-width for responsiveness */
+    }
+
+    .header-icons {
+        margin-right: 0;
+        margin-left: 30%;
+        /* Reset margin for responsiveness */
+    }
+
+    /* Add any additional responsive styles if needed */
 }
