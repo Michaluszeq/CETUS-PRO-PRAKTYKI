@@ -26,15 +26,15 @@
     text-decoration: none;
     font-size: 24px;
     color: white;
-    margin-left: 10px;
+    margin-left: auto;
 }
 
 .header-icons {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: auto;
-    /* Adjusted to move icons to the right */
+    margin-right: -90%;
+   
 }
 
 .add-listing-btn {
@@ -60,7 +60,6 @@
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    /* Adjusted to move icons to the right */
 }
 
 .icon {
@@ -87,31 +86,4 @@
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-@media (max-width: 768px) {
-    .MainLink {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .header-icons {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-        width: 100%;
-        /* Full width for smaller screens */
-    }
-
-    .icons-group {
-        margin-top: 10px;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .icon {
-        margin: 5px;
-    }
 }
