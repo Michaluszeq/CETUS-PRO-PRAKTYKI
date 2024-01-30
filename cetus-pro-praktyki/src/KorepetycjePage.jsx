@@ -10,7 +10,7 @@ export default function KorepetycjePage() {
   const [opinions, setOpinions] = useState(""); // Initialize opinions state
 
   const option = {
-    width: '70%',
+    width: '35%',
     height:'35px',
     radius:'30px'
   };
@@ -24,6 +24,7 @@ export default function KorepetycjePage() {
   return (
     <div className='korepetycje-page'>
       <Baner />
+        <div className='top'>
         <select style={option} name="" id="przedmiot">
                         <option value="J.Polski">J.Polski</option>
                         <option value="J.Niemiecki">J.Niemiecki</option>
@@ -39,6 +40,7 @@ export default function KorepetycjePage() {
                         <option value="Programowanie">Programowanie</option>
                     </select>
                     <button onClick={getCorepetitions}>Wybierz</button>
+        </div>
       <div className='korepetycje-container'>
         <h1>Lista Korepetycji</h1>
         <div className='korepetycje-list'>

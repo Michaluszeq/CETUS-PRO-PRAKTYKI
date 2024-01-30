@@ -1,0 +1,11 @@
+button{
+    width: 35%;
+}
+.korepetycje-list{
+    /* border: 3px red solid; */
+}
+.top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
