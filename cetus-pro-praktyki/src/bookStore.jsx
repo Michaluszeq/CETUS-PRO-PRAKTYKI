@@ -18,7 +18,7 @@ export default function App() {
                 
                 <Baner/>
                 <Adverts/>
-                <BottomBaner/>
+                {/* <BottomBaner/> */}
             </div>
            
   );

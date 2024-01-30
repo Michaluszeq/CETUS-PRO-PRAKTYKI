@@ -16,7 +16,7 @@ export default function App() {
             <div className='mainCotainer'>
                 <Baner/>
                 <MainPageContent/>
-                <BottomBaner/>
+                {/* <BottomBaner/> */}
             </div>
            
   );

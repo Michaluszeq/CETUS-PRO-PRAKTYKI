@@ -46,7 +46,7 @@ const OpiniaPage = () => {
         <h1>Opinie o nauczycielach</h1>
         <Generator what={opinions} />
       </div>
-      <BottomBaner />
+      {/* <BottomBaner /> */}
     </div>
   );
 };

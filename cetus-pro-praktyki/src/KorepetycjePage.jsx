@@ -45,7 +45,7 @@ export default function KorepetycjePage() {
           <Generator what={opinions}/>
         </div>
       </div>
-      <BottomBaner />
+      {/* <BottomBaner /> */}
     </div>
   );
 }
